@@ -1,0 +1,436 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ROOT ET FONT */
+
+:root {
+    --font-title: "Adlery";
+    --font-content: 'Open Sans', sans-serif;
+    --color-titles: #E2D132;
+    --color-content: #ffffff;
+    --background-dark: #20233E;
+    --background-light: #313451;
+    --background-aside: #383D6B;
+
+}
+
+@font-face {
+    font-family: "Adlery";
+    src: url(Adlery_TRIAL.ttf) format("opentype");
+}
+
+
+/* BODY */
+
+body {
+    background-color: var(--background-light);
+    font-family: var(--font-content);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* GENERAL */
+
+h3 {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--color-titles);
+}
+
+.italique {
+    font-style: italic;
+}
+
+
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-dark);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#logo a {
+    color: var(--color-titles);
+}
+
+#titre_logo {
+    font-size: 35px;
+    font-family: 'Adlery';
+    color: var(--color-titles);
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+#onglet {
+    font-family: var(--font-title);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#onglet span {
+    margin-right: 100px;
+    padding: 35px;
+}
+
+#onglet a {
+    color: var(--color-content);
+}
+
+#onglet a:hover {
+    color: var(--color-titles);
+}
+
+
+/* BANDEAU */
+
+#bandeau {
+    height: 500px;
+    background-image: url(images/bandeau.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#commentaire {
+    background-color: black;
+    opacity: 90%;
+    width: 50%;
+    height: 500px;
+    /* padding-top : 80px; */
+    float: right;
+    color: var(--color-content);
+    font-size: 40px;
+    position: relative;
+}
+
+#phrase_accroche {
+    text-align: center;
+    padding: 250px 100px 100px 100px;
+
+}
+
+
+/* FOOTER */
+/* SOCIALS */
+
+#socials {
+    height: 80px;
+    width: 100%;
+    background-color: var(--background-dark);
+    display: flex;
+    justify-content: center;
+    color: var(--color-titles);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#socials div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px 0 100px;
+}
+
+#socials img {
+    width: 65px;
+    height: 65px;
+}
+
+#socials a {
+    color: var(--color-titles);
+}
+
+/* CONTACT */
+
+#main_footer {
+    display: flex;
+    height: 150px;
+    padding : 0 200px 0 200px;
+}
+
+#liens_site{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.class_footer {
+    display: flex;
+    justify-content: center;
+}
+
+#main_footer a {
+    color: var(--color-titles);
+}
+
+#main_footer a:hover {
+    text-decoration: underline;
+}
+
+#liens_site li {
+    margin : 50px;
+}
+
+#contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-titles);
+}
+
+#contact li {
+    padding: 15px;
+}
+
+/* COPYRIGHT */
+
+#copyright {
+    height: 40px;
+    width: 100%;
+    background-color: var(--background-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-titles);
+    font-size: 15px;
+}
+
+
+
+/* ---- CONTENT ----- */
+
+/* CV */
+
+/* J'aurais pu faire une grid */
+
+#haut_CV {
+    display: flex;
+    margin-top: 30px;
+}
+
+#presentation {
+    color: var(--color-content);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 30px;
+}
+
+#presentation h3 {
+    padding: 20px;
+}
+
+#presentation p {
+    padding: 20px;
+}
+
+#photo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#milieu_CV, #bas_CV {
+    display: flex;
+    color: var(--color-content);
+}
+
+#milieu_CV h3, #bas_CV h3 {
+    padding: 20px;
+}
+
+#milieu_CV h2, #bas_CV h2 {
+    padding: 20px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+#milieu_CV p, #bas_CV p, #bas_CV li {
+    padding : 10px 20px 10px 20px;
+}
+
+.bloc {
+    background-color: var(--background-aside);
+    border-radius: 10px;
+    margin: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#experience, #competence {
+    margin-left: 100px;
+}
+
+#formation, #hobbies {
+    margin-right: 100px;
+}
+
+
+/* REALISATIONS */
+
+#real {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+#real aside {
+    height: 200px;
+    display: flex;
+    width: 60%;
+    margin : 20px;
+}
+
+#real aside:hover {
+    width: 65%;
+    height: 230px;
+    transition: 0.5s;
+}
+
+#couture {
+    width: 40%;
+    background-image: url(./images/couture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#player {
+    width: 40%;
+    background-image: url(./images/player.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bandeau_droite {
+    width: 60%;
+    background-color: var(--background-aside);
+    color: var(--color-content);
+}
+
+.centre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bandeau_droite h3 {
+    margin: 40px; 
+}
+
+
+/* VEILLES */
+
+#veille {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin: 20px;
+}
+
+.card:hover {
+    width: 24%;
+    transition: 0.5s;
+}
+
+#image_boot {
+    background-image: url(./images/boot.png);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bandeau_bas {
+    background-color: var(--background-aside);
+    color: var(--color-content);
+    height: 300px;
+}
+
+.bandeau_bas h3 {
+    margin: 25px 25px 15px 25px; 
+}
+
+.bandeau_bas p {
+    padding : 10px;
+}
+
+
+
