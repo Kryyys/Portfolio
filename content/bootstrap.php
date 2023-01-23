@@ -5,7 +5,7 @@
 
     <main id="bootstrap_main">
 
-        <div>
+        <article>
 
             <h3>Qu’est-ce que Bootstrap ?</h3>
             <br><br>
@@ -15,10 +15,10 @@
             <br>
             <p>A noter que Bootstrap est compatible avec les dernières versions des navigateurs majeurs, mais peut fonctionner de manière dégradée sur des navigateurs plus anciens.</p>
             <br><br>
-        </div>
+        </article>
 
 
-        <div>
+        <article>
             <h3>Un peu d’histoire…</h3>
             <br><br>
             <p>Bootstrap a été créé en 2010, par deux développeurs très actifs sur Twitter : Mark Otto et Jacob Thornton. Le 19 août 2011, la première version est mise à disposition du public sous licence open source par Twitter.</p>
@@ -63,7 +63,7 @@
         </div>
 
 
-        <div>
+        <article>
             <h4>• Créer une page HTML</h4>
             <br>
             <p>Avant toute chose, il faut créer une page HTML, avec un doctype, en n’oubliant pas d’inclure l’élément meta, étant donné que Bootstrap est conçu pour créer des sites responsifs.
@@ -73,11 +73,11 @@
             <img src="./images/boot_img1.png" class="titre_centre" alt="">
             <br>
             <br>
-        </div>
+        </article>
 
 
 
-        <div>
+        <article>
             <h4>• Créer des containers</h4>
             <br>
             <p>Bootstrap a besoin de containers pour enrober les éléments du site.</p>
@@ -91,10 +91,10 @@
             <br>
             <img src="./images/boot_img2.png" class="titre_centre" alt="">
             <br><br>
-        </div>
+        </article>
 
 
-        <div>
+        <article>
 
             <h4>• Charger Bootstrap</h4>
             <br>
@@ -121,12 +121,12 @@
             <img src="./images/boot_img4.png" class="titre_centre" alt="">
             <br><br>
             <br>
-        </div>
+        </article>
 
 
 
 
-        <div>
+        <article>
             <h3>Conclusion</h3>
             <br>
             <p>En conclusion, Bootstrap est intéressant à utiliser lorsque l’on le maîtrise bien et que l’on doit travailler vite, et également lorsque l’on a des exigences en termes de design relativement classiques. Il assure aussi une certaine robustesse à notre code. Néanmoins, il est assez lourd à charger et cela peut être handicapant dans certaines conditions.</p>
@@ -134,7 +134,7 @@
             <p>Bootstrap est donc une solution de choix lorsqu’il s’agit de livrer des sites internet assez rapidement, à des clients qui ne disposent pas d’un gros budget, qui n’ont pas d’exigences extravagantes et qui n’ont pas d’équipe de développeurs dédiés pour assure la maintenance de leur site.</p>
             <br><br>
             <p class="italique">Sources : Wikipédia, Pierre-Giraud.com, W3School…</p>
-        </div>
+        </article>
 
         <br>
         <br>
