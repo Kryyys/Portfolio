@@ -88,7 +88,13 @@ h3 {
     font-style: italic;
 }
 
+.center {
+    text-align: center;
+}
 
+.gras {
+    font-weight: 900;
+}
 
 /* NAVBAR */
 nav {
@@ -430,6 +436,37 @@ nav {
 
 .bandeau_bas p {
     padding : 10px;
+}
+
+/* BOOTSTRAP */
+
+#bootstrap_main {
+    color: var(--color-content);
+    margin: 0 60px 0 60px;
+}
+
+#bootstrap_main li {
+    padding : 10px;
+}
+
+#bootstrap_main h4 {
+    font-size: 1.5rem;
+    color: var(--color-titles);
+}
+
+
+.titre_centre {
+    text-align: center;
+}
+
+.titre_centre img {
+    margin: 20px;
+}
+
+.titre_centre h2 {
+    font-size: 3rem;
+    color: var(--color-titles);
+    padding-bottom: 50px;
 }
 
 

@@ -13,7 +13,7 @@
                     };
                     switch ($page) {
                         case 'home':
-                            echo "Je n'ai absolument aucune idée de quelle phrase d'accroche je devrais mettre ici...";
+                            echo "Il paraît qu'avoir une phrase d'accroche, c'est pas mal...";
                             break;
                         case 'cv':
                             echo "Curiculum Vitae";
