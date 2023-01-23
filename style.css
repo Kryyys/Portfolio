@@ -531,6 +531,24 @@ nav {
         margin: 10px;
     }
 
+    #bandeau, #commentaire {
+        height: 400px;
+        font-size: 2rem;
+    }
+
+    
+
+    /* FOOTER */
+
+    #main_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        padding : 0 100px 0 100px;
+    }
+
     /* HOME CONTENT */
 
     #home_cards {
@@ -549,8 +567,37 @@ nav {
         transition: 0.5s;
     }
 
+    /* REAL */
+
+    #real aside {
+        width: 90%;
+    }
+
+    #real aside:hover {
+        width: 95%;
+        height: 230px;
+        transition: 0.5s;
+    }
 }
 
+
+
+@media screen and (max-width:800px) {
+    #milieu_CV, #bas_CV {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #experience, #competence, #formation, #hobbies {
+        margin: 10px 0 10px 0;
+    }
+
+    .bloc {
+        width: 75%;
+    }
+}
 
 
 
@@ -559,6 +606,23 @@ nav {
     /* NAV */
     #phrase_accroche {
         padding: 200px 100px 100px 100px;
+    }
+
+    /* CV */
+
+    #haut_CV {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #presentation {
+        width:90%;
+    }
+
+    #bootstrap_main img {
+        width : 400px;
     }
 }
 
@@ -579,6 +643,11 @@ nav {
 
     #phrase_accroche {
         padding: 150px 40px 100px 40px;
+    }
+
+    #bandeau, #commentaire {
+        height: 320px;
+        font-size: 1.5rem;
     }
 
     /* BURGER MENU */
@@ -623,6 +692,25 @@ nav {
         margin-right: 0px;
     }
 
+    /* SOCIALS */
+
+    #socials {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    /* FOOTER */
+
+    #main_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        padding : 0px;
+    }
+
     /* HOME CONTENT */
 
     #home_cards {
@@ -639,6 +727,76 @@ nav {
     .card:hover {
         width: 100%;
         transition: none;
+    }
+
+    /* CV */
+
+    .bloc {
+        width: 100%;
+    }
+
+    /* REAL */
+
+    #real {
+        width: 100%;
+    }
+
+    #real aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #real aside:hover {
+        width: 100%;
+        transition: none;
+    }
+
+    #couture {
+        width: 100%;
+        height: 500px;
+        background-image: url(./images/couture.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #player {
+        width: 100%;
+        height: 500px;
+        background-image: url(./images/player.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bandeau_droite {
+        height: 700px;
+            width: 100%;
+    }
+
+    .bandeau_droite h3 {
+        margin: 20px; 
+    }
+    
+    /* VEILLE */
+
+    #veille {
+        margin: 0px;
+    }
+
+    .bandeau_bas {
+        height: auto;
+    }
+    
+    /* BOOTSTRAP */
+
+    #bootstrap_main {
+        margin : 0 10px 0 10px;
+    }
+
+    #bootstrap_main img {
+        width : 100%;
     }
 }
 
