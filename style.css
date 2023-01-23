@@ -145,6 +145,14 @@ nav {
     color: var(--color-titles);
 }
 
+#toggle {
+    display: none;
+}
+
+#onglet > label {
+    display: none;
+}
+
 
 /* BANDEAU */
 
@@ -270,6 +278,34 @@ nav {
 
 
 /* ---- CONTENT ----- */
+
+/* HOME */
+
+#home_cards {
+    display: flex;
+    justify-content: center;
+}
+
+#home_text {
+    color: var(--color-content);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#image_CV {
+    background-image: url(./images/cv.png);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#image_real {
+    background-image: url(./images/player.png);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* CV */
 
@@ -468,6 +504,145 @@ nav {
     color: var(--color-titles);
     padding-bottom: 50px;
 }
+
+
+
+@media screen and (min-width:501px) and (max-width:1120px) {
+
+    /* NAV */
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+    }
+
+    #onglet span {
+        margin-right: 0px;
+    }
+
+    #commentaire {
+        width: 75%;
+    }
+
+    .burger {
+        margin: 10px;
+    }
+
+    /* HOME CONTENT */
+
+    #home_cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    .card:hover {
+        width: 75%;
+        transition: 0.5s;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:640px) {
+
+    /* NAV */
+    #phrase_accroche {
+        padding: 200px 100px 100px 100px;
+    }
+}
+
+
+
+
+@media screen and (max-width:500px) {
+
+    /* NAV */
+
+    #titre_logo {
+        display: none;
+    }
+
+    #commentaire {
+        width: 100%;
+    }
+
+    #phrase_accroche {
+        padding: 150px 40px 100px 40px;
+    }
+
+    /* BURGER MENU */
+
+    #toggle {
+        display: none;
+    }
+    
+    #onglet > label {
+        display: flex;
+    }
+    
+    label > img {
+        width: 65px;
+        border-radius: 11%;
+        margin-right: 50px;
+    }
+    
+    label {
+        cursor: pointer;
+    }
+    
+    #toggle:checked ~ .burger {
+        display: flex;
+        align-items: center;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        display: none;
+        font-size: 3rem;
+        background-color: var(--background-dark);
+        position: absolute;
+        right: 0px;
+        top: 80px;
+        width: 100%;
+    }
+
+    #onglet span {
+        margin-right: 0px;
+    }
+
+    /* HOME CONTENT */
+
+    #home_cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card:hover {
+        width: 100%;
+        transition: none;
+    }
+}
+
+
 
 
 
